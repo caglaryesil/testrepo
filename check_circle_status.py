@@ -4,12 +4,12 @@ import math
 
 # Read data from the user.
 first_circle_center_and_radius = input("Enter center coordinates and radius of first circle (example: x1 y1 r1) = ")
-second_circle_center_and_radius = input("Enter center coordinates and radius of first circle (example: x2 y2 r2) = ")
+second_circle_center_and_radius = input("Enter center coordinates and radius of second circle (example: x2 y2 r2) = ")
 
 # The values from the users are of type string.
 # To perform mathematical operations, we need to convert them to float type
 x1, y1, r1 = [float(coordinate)  for coordinate in first_circle_center_and_radius.split()]
-x2, y2, r2 = [float(coordinate)  for coordinate in first_circle_center_and_radius.split()]
+x2, y2, r2 = [float(coordinate)  for coordinate in second_circle_center_and_radius.split()]
 
 # Compute the distance between centers 
 distance_max = r1 + r2 
